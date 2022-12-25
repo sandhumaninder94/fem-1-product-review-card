@@ -1,0 +1,117 @@
+
+
+body{
+    background-color: #f4eae2;
+    max-height: 100vh;
+}
+p{
+    font-size: 14px;
+}
+.card{
+    display: grid;
+    
+    margin: 10% auto;   
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;  
+}
+.product-image{
+    display: flex;
+}
+.image {
+    max-width: 100%;
+   /* display: inherit;*/
+}
+.product-description{
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+}
+h1.product-name{
+    margin: 3% auto;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-type{
+    /* margin-top: 10px ; */
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.4em;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+p.product-description-para{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    margin: 2% auto 0;
+
+}
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+}
+h1.current-price{
+    padding-right: 20px;
+    color: hsl(158, 36%, 37%);
+}
+h3.old-price{
+    text-decoration: line-through;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  color: #ffffff;
+  font-size: 15px;
+  background: hsl(158, 36%, 37%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  bottom: 1%;
+  font-family: 'Montserrat';
+}
+
+.btn:hover {
+  background: hsl(158, 36%, 23%);
+  text-decoration: none;
+}
+
+.btn-img{
+    padding-right: 2%;
+}
+
+@media (min-width: 1440px){
+    .card{
+        max-width: 40rem;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+}
+
+@media (max-width: 375px){
+    
+    .product-image{
+        overflow: hidden;
+        display: flex;
+    }
+}
